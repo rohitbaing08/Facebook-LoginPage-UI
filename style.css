@@ -1,0 +1,141 @@
+/* ------------------------------DEFAULT-------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 0.01rem;
+  width: 100vw;
+  background-color: #cacaca;
+}
+
+.container {
+  margin: 45vh auto;
+  transform: translateY(-50%);
+  width: 75%;
+  display: flex;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 6rem;
+  color: rgb(82, 82, 255);
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+a {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.text {
+  width: 60%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.form {
+  width: 40%;
+  border-radius: 4px;
+  background-color: white;
+  padding: 15px;
+}
+.border-top {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 0.5px solid grey;
+}
+.button {
+  background-color: #4caf50;
+  min-width: 190px;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  &:hover {
+    background-color: #2b862e;
+  }
+}
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  background-color: rgb(82, 82, 255);
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(60, 60, 255);
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: block;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+  .form {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .form {
+    width: 90%;
+    margin: auto;
+  }
+}
