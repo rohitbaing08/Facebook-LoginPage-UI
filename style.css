@@ -17,6 +17,12 @@ body {
   background-color: #cacaca;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+/*-----------------------------STYLING__________________________*/
+
 .container {
   margin: 45vh auto;
   transform: translateY(-50%);
@@ -24,18 +30,16 @@ body {
   display: flex;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 h1 {
   font-size: 6rem;
   color: rgb(82, 82, 255);
 }
+
 h3 {
   font-size: 3rem;
   font-weight: 400;
 }
+
 a {
   display: block;
   font-size: 1.5rem;
@@ -46,6 +50,7 @@ a {
     cursor: pointer;
   }
 }
+
 .text {
   width: 60%;
   margin-top: 50px;
@@ -94,7 +99,6 @@ input[type="submit"] {
     background-color: rgb(60, 60, 255);
   }
 }
-
 input[type="text"] {
   width: 100%;
   padding: 10px;
@@ -105,6 +109,8 @@ input[type="text"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+/*----------------------------MEDIA QUERRIES----------------------------------*/
 
 @media only screen and (max-width: 1000px) {
   .container {
